@@ -141,9 +141,9 @@ names(finalds)<-gsub("BodyBody", "Body", names(finalds))
 
 # aggregate() splits the data into subsets, computes summary statistics for each, and returns the result in a convenient form.
 library(plyr)
-finaldsWithAvg <- aggregate(. ~subjectId + activityId, finalds, mean)
+finaldsWithAvg <- aggregate(. ~subjectId + activityId + activityType, finalds, mean)
 # Reorder by subjectId
-finaldsWithAvg <- finaldsWithAvg[order(finaldsWithAvg$subjectId,finaldsWithAvg$activityId),]
+finaldsWithAvg <- finaldsWithAvg[order(finaldsWithAvg$subjectId, finaldsWithAvg$activityId, finaldsWithAvg$activityType),]
 write.table(finaldsWithAvg, file = "finaldsWithAvg.txt",row.name=FALSE)
  
 
