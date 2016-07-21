@@ -25,9 +25,9 @@ Steps followed:
   5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 Brief summary of the original data: 
-Human Activity Recognition Using Smartphones Data Set
-30 volunteers
-6 activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) 
+- Human Activity Recognition Using Smartphones Data Set
+- 30 volunteers
+- 6 activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) 
 
   For each record it is provided: Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
   - Triaxial Angular velocity from the gyroscope. 
